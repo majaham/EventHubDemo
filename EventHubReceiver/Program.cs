@@ -34,7 +34,7 @@ namespace EventHubReceiver
             Console.WriteLine(arg.Exception.Message);
             return Task.CompletedTask;
         }
-
+        //EventHub event handler
         private static async Task Processor_ProcessEventAsync(Azure.Messaging.EventHubs.Processor.ProcessEventArgs arg)
         {
             Console.WriteLine(arg.Data.EventBody.ToString());
