@@ -8,6 +8,7 @@ namespace EventHubReceiver
 {
     class Program
     {
+        //You will need to create event hubs namespace and subscription
         private static readonly string connString = "";
         private static readonly string consumerGroup = "$Default";
         private static readonly string connStorage = "";
